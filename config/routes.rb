@@ -6,7 +6,10 @@ GiftList::Application.routes.draw do
   resources :sessions
   
   resources :users
-  resources :lists
+
+  resources :lists do
+    resources :gifts
+  end
 
   get '/about', :to => 'static_pages#about'
   get '/contact', :to => 'static_pages#contact'

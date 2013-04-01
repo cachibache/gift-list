@@ -1,3 +1,7 @@
 <h2> <%= @list.occasion %> </h2> <br/>
 
+<%= render :partial => 'gifts/gifts', :locals =>  {:gifts => @list.gifts}%>
+
+<p><%= link_to 'Add a Gift', new_list_gift_path(@list) %> </p>
+
 <p><%= link_to 'Home', lists_path %></p>
