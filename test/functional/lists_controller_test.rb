@@ -56,7 +56,7 @@ class ListsControllerTest < ActionController::TestCase
   end
 
   test 'an occasion can be deleted if logged in' do
-    user = UserFactory.current_user
+    user = UserFactory.user
     list = ListFactory.list
     list[:user_id] = user.id
     # debugger
