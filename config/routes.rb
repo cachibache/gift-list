@@ -13,9 +13,10 @@ GiftList::Application.routes.draw do
 
   get '/about', :to => 'static_pages#about'
   get '/contact', :to => 'static_pages#contact'
+  get '/', :to => 'static_pages#home'
 
   root :to => 'static_pages#home'
-
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
