@@ -12,6 +12,7 @@ class ListFactory
 
   def self.list(params = {})
     params[:occasion] ||= "some occasion"
+    # params[:user_id] = user.id 
     List.create!(params)
   end
 end
