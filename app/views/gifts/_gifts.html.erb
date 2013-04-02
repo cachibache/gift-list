@@ -1,0 +1,10 @@
+<ul>
+ 
+    <% gifts.each do |gift| %>
+      <li>Item: <%= gift.name %> </li> 
+      <li>Notes: <%= gift.description %> </li>
+        <%= link_to 'Edit', edit_list_gift_path(@list, gift) %>
+        <%= link_to 'Delete', list_gift_path(@list, gift), method: :delete, data: {confirm: 'Are you sure?'} %> <br>
+    <% end %>
+
+</ul>

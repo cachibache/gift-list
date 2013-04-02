@@ -58,6 +58,8 @@ class ListsControllerTest < ActionController::TestCase
   test 'an occasion can be deleted if logged in' do
     user = UserFactory.user
     list = ListFactory.list
+    list[:user_id] = user.id
+    # debugger
     assert_equal 1, List.count
     delete :destroy, { :id => list.id }, {:user_id => user.id}
     assert_equal 0, List.count

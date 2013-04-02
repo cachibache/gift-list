@@ -24,4 +24,16 @@ class UserFactory
     user.save!
     user
   end
+
+  # def self.current_user(params = {})
+  #   user = self.user(params)
+  #   session[:user_id] = user.id
+  #   user.send :current_user
+  #   user.save!
+  #   user
+  # end
+
+  
 end
+
+
