@@ -12,26 +12,26 @@
   <% end %>
 
 <div class="user-form grid_7">
-  <div class="user-row">
-    <%= f.label :name, "Name" %>:
-    <%= f.text_field :name %><br/>
+  <div class="user-row clearfix">
+    <div class="label"> <%= f.label :name, "Name" %>: </div>
+    <div class="field"> <%= f.text_field :name %></div><br/>
   </div>
 
- <div class="user-row">
-  <%= f.label :email, "Email" %>:
-  <%= f.text_field :email %><br/>
+ <div class="user-row clearfix">
+    <div class="label"><%= f.label :email, "Email" %>: </div>
+    <div class="field"><%= f.text_field :email %></div><br/>
 </div>
 
- <div class="user-row">
-  <%= f.label :password, "Password" %>:
-  <%= f.password_field :password %><br/>
+ <div class="user-row clearfix">
+    <div class="label"><%= f.label :password, "Password" %>: </div>
+    <div class="field"><%= f.password_field :password %></div><br/>
 </div>
 
- <div class="user-row">
-  <%= f.label :password_confirmation, "Password Confirmation" %>:
-  <%= f.password_field :password_confirmation %><br/>
+ <div class="user-row bottom clearfix">
+    <div class="label"><%= f.label :password_confirmation, "Confirm password" %>: </div>
+     <div class="field"><%= f.password_field :password_confirmation %></div><br/>
 </div>
 
-  <%= f.submit %>
+  <%= f.submit class: "btn"%>
 <% end %>
 </div>

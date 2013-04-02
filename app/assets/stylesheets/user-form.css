@@ -1,4 +1,37 @@
+.form-title {
+  margin-left: 2%;
+  margin-bottom: 3%;
+}
+
 .user-form {
   margin-left: 2%;
   margin-bottom: 10%
 }
+
+.user-row {
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+
+.bottom {
+  margin-bottom: 6%;
+}
+
+.label {
+  width: 32%;
+  float: left;
+  font-weight: bold;
+}
+
+.label.profile {
+  width: 20%;
+}
+.field {
+  float: left;
+}
+
+#profile-link a{
+ text-decoration: underline;
+ color: blue;
+}
+

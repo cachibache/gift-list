@@ -1,6 +1,15 @@
-<h1> Profile For: <%= @user.name %> </h1>
+<h2 class="form-title"> <%= @user.name %>'s profile </h2>
 
-Email: <%= @user.email %><br/>
-My Lists: </br>
-<%= link_to 'Edit profile', edit_user_path(@user) %> <br/>
-<%= link_to 'Delete profile', user_path(@user), method: :delete, data: {confirm: 'Are you sure?'} %> <br/>
+<div class="user-form grid_7">
+  <div class="user-row clearfix">
+    <div class="label profile">Email:</div>
+    <div class="field"><%= @user.email %></div><br/>
+  </div>
+  <div class="user-row bottom clearfix">
+  <div class="label profile" id="profile-link" ><%= link_to 'My Lists', lists_path %> </div></br>
+  <!-- <div class="field"><%= @user.lists %></div><br/> -->
+  </div>
+<%= link_to 'Edit profile', edit_user_path(@user), class: "btn edit-btn" %>
+<%= link_to 'Delete profile', user_path(@user), class: "btn delete-btn" , method: :delete, data: {confirm: 'Are you sure?'} %> <br/>
+
+</div>
