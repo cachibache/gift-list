@@ -1,12 +1,14 @@
-<h1>Occasions</h1>
-<p>Here they are!</p>
+<div class="user-form grid_7">
+<h1 class="form-title">Occasions</h1>
 
-<ul>
- 
+<ul class="list-style">
+   <div class="user-row clearfix">
     <% @lists.each do |list| %>
-     <li><%= link_to list.occasion, list_path(list) %> </li> 
-        <%= link_to 'Edit', edit_list_path(list) %>
-        <%= link_to 'Delete', list_path(list), method: :delete, data: {confirm: 'Are you sure?'} %> <br>
+     <li ><%= link_to list.occasion, list_path(list) %> </li> 
+        <%= link_to 'Edit', edit_list_path(list), class: "btn edit-btn" %>
+        <%= link_to 'Delete', list_path(list), class: "btn delete-btn", method: :delete, data: {confirm: 'Are you sure?'} %> <br>
     <% end %>
-
-<p><%= link_to 'Add a list', new_list_path %></p>
+ <div>
+</ul>
+<p><%= link_to 'Add a list', new_list_path, class: "btn list" %></p>
+</div>

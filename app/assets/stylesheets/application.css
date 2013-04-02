@@ -57,3 +57,7 @@ h1 {
   margin-right: 1.5625%;
 }
 
+ul li {
+  list-style: none;
+}
+

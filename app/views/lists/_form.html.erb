@@ -1,6 +1,10 @@
 <%= form_for @list do |f| %>
 
-  <%= f.label :occasion, "Gift List Occasion" %>
-  <%= f.text_field :occasion %>
-  <%= f.submit %>
+<div class="user-form grid_7">
+  <div class="user-row bottom clearfix">
+   <div class="label"> <%= f.label :occasion, "Gift List Occasion" %></div>
+    <div class="field"><%= f.text_field :occasion %></div></br>
+  </div>
+  <%= f.submit class: "btn"%>
 <% end %>
+</div>

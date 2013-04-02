@@ -23,7 +23,15 @@
   font-weight: bold;
 }
 
+.label.profile {
+  width: 20%;
+}
 .field {
   float: left;
+}
+
+#profile-link a{
+ text-decoration: underline;
+ color: blue;
 }
 

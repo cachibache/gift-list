@@ -1,5 +1,7 @@
-<h2>Users</h2>
+<h2 class="form-title">Users</h2>
 
+<div class="user-form grid_7">
+  <div class="user-row clearfix">
 <% @users.each do |user| %>
   <ul>
     <li> <%= link_to user.name, user_path(user) %></li> 
@@ -8,3 +10,4 @@
     <%= link_to 'Delete', user_path(user), method: :delete, data: {confirm: 'Are you sure?'} %> <br/>
   </ul>
   <%end%>
+</div>
