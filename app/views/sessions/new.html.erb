@@ -1,11 +1,17 @@
-<h2>Please log in </h2>
+<h2 class="form-title">Please log in </h2>
 <%= form_tag sessions_path do %>
 
-  <%= label_tag :email %>
-  <%= text_field_tag :email, params[:email] %><br/>
+<div class="user-form grid_7">
+  <div class="user-row clearfix">
+   <div class="label"><%= label_tag :email, "Email:" %></div>
+    <div class="field"><%= text_field_tag :email, params[:email] %></div><br/>
+  </div>
 
-  <%= label_tag :password %>
-  <%= password_field_tag :password %><br/>
+  <div class="user-row bottom clearfix">
+   <div class="label"><%= label_tag :password, "Password:" %></div>
+    <div class="field"><%= password_field_tag :password %></div><br/>
+  </div>
 
-  <%= submit_tag "Log in" %>
+  <%= submit_tag "Log in", class: "btn" %>
   <% end %>
+</div>
