@@ -17,11 +17,15 @@
 
     <div class=" grid_4">
       <h2>Manage your list</h2>
-      <img class="thumbnails" src="http://www.harleyslodge.co.uk/wp-content/uploads/2012/09/weddings3.jpg" alt="manage list"/>
+      <%= link_to image_tag("http://www.harleyslodge.co.uk/wp-content/uploads/2012/09/weddings3.jpg", :class => "thumbnails", :alt => "manage you list"), lists_path %>
     </div>
 
     <div class=" grid_4 omega">
-      <h2>Buy a gift</h2>
-      <img class="thumbnails" src="http://www.birdikus.com/img/jaula-decoracion_17.jpg" alt="buy a gift"/>
+      <h2><%= link_to "Buy a gift", lists_path %></h2>
+      <%= link_to image_tag("http://www.birdikus.com/img/jaula-decoracion_17.jpg", :class => "thumbnails", :alt => "buy a gift"), lists_path %>
     </div>
   </div>
+
+   
+
+  
